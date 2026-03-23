@@ -1,4 +1,5 @@
-
+## This tool scans the current directory for `.log` files and checks their sizes.
+## It uses the `os` library to list files and determine their sizes, labeling them as 'SMALL' or 'LARGE'.
 
 def log_file_scanner():
     import os
