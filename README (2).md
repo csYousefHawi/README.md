@@ -24,6 +24,6 @@ The Security Monitoring Toolkit is designed to perform multiple system and secur
 
 ### GUI Version: 
    
-    python GUI_.py
+    python GUI.py
 
 
