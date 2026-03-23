@@ -3,7 +3,7 @@ from tkinter import scrolledtext
 import sys
 import time
 
-# --- استدعاء الأدوات الحقيقية ---
+
 try:
     from os_fingerprinting import os_fingerprinting
     from log_file_scanner import log_file_scanner
@@ -29,7 +29,7 @@ class StdoutRedirector:
 class SecurityToolkitGUI:
     def __init__(self, root):
         self.root = root
-        # التعديل 1: تغيير عنوان النافذة (Title Bar)
+    
         self.root.title("SECURITY TOOLS") 
         self.root.geometry("1100x750")
         self.root.configure(bg="#05070A")
@@ -38,10 +38,10 @@ class SecurityToolkitGUI:
         self.sidebar = tk.Frame(self.root, bg="#05070A", width=320)
         self.sidebar.pack(side=tk.LEFT, fill=tk.Y, padx=40, pady=30)
 
-        # التعديل 2: تغيير النص الرئيسي في الواجهة الجانبية
+        
         lbl_title = tk.Label(
             self.sidebar, 
-            text="SECURITY TOOLS", # تم التغيير هنا
+            text="SECURITY TOOLS", 
             fg="#00F6FF", 
             bg="#05070A", 
             font=('Consolas', 18, 'bold'), 
@@ -49,7 +49,6 @@ class SecurityToolkitGUI:
         )
         lbl_title.pack()
 
-        # --- أزرار الأدوات ---
         self.add_brand_button("🎮  OS FINGERPRINTING", lambda: self.run_tool(os_fingerprinting, "EXPLORE PROJECTS"))
         self.add_brand_button("🔍  FILE SCANNER", lambda: self.run_tool(log_file_scanner, "FILE SCANNER"))
         self.add_brand_button("🛡️  SUSPICIOUS PROCESS", lambda: self.run_tool(suspicious_process_detector, "SUSPICIOUS PROCESS"))
@@ -59,7 +58,6 @@ class SecurityToolkitGUI:
         tk.Label(self.sidebar, bg="#05070A", pady=20).pack()
         self.add_brand_button("🗑️  CLEAR TERMINAL", self.clear_terminal, is_clear=True)
 
-        # Terminal Area
         self.main_area = tk.Frame(self.root, bg="#05070A")
         self.main_area.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=20, pady=20)
 
