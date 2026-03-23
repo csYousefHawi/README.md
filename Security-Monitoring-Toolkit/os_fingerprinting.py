@@ -1,3 +1,4 @@
+##This task identifies the system's operating system name and version. It uses the `platform` library to retrieve this information and displays it on the screen.
 def os_fingerprinting():
     import platform
 
