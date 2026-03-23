@@ -19,7 +19,7 @@ The Security Monitoring Toolkit is designed to perform multiple system and secur
    cd Security-Monitoring-Toolkit
 
    Open a terminal and run the following command to start the program:
-    ```bash
+    
     python Command-Line_Menu_Version.py
 
 ### GUI Version: 
