@@ -1,4 +1,5 @@
-
+## This tool reads a login log file and analyzes login activity.
+## It counts successful and failed login attempts and identifies suspicious IPs.
 
 def login_activity_analyzer(log_file="login.log"):
     import random
