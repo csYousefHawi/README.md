@@ -7,5 +7,7 @@ def suspicious_process_detector():
         user = process.info['username']
         user_label = 'ADMIN' if user in ['root', 'Administrator'] else 'USER'
         print(f"Process: {process.info['name']}, PID: {process.info['pid']}, User: {user_label}")
-
+        
+if __name__ == "__main__":
+    suspicious_process_detector()
 
