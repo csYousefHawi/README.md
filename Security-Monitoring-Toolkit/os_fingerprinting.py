@@ -7,3 +7,6 @@ def os_fingerprinting():
     os_version = platform.version()
     print(f"OS Name: {os_name}")
     print(f"OS Version: {os_version}")
+    
+if __name__ == "__main__":
+    os_fingerprinting()
