@@ -11,3 +11,6 @@ def network_monitor():
     for conn in psutil.net_connections(kind='inet'):
         if conn.status == 'LISTEN':
             print(f"Port: {conn.laddr.port}, PID: {conn.pid}")
+            
+if __name__ == "__main__":
+    network_monitor()
