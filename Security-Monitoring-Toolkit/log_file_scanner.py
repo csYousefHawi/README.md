@@ -14,3 +14,6 @@ def log_file_scanner():
         
         
         print(f"File: {file}, Size: {file_size_mb:.2f} MB, Label: {size_label}")
+        
+if __name__ == "__main__":
+    log_file_scanner()
