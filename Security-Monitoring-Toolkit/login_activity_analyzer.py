@@ -43,3 +43,6 @@ def login_activity_analyzer(log_file="login.log"):
     for ip, count in failed_ips.items():
         if count > 2: 
             print(f"{ip} - {count} failed attempts")
+            
+if __name__ == "__main__":
+    login_activity_analyzer("login.log")
